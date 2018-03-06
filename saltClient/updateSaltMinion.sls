@@ -1,4 +1,5 @@
 # Update Salt Client
 
 installUpdate:
-  asdf
+  module.run:
+    - name: saltutil.update
