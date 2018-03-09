@@ -1,6 +1,6 @@
 {%- if grains['os_family'] == 'Windows' %}
 minionUpgrade:
-  pkg.install:
+  pkg.latest:
     - name: salt-minion
 
 {%- elif grains['os_family'] == 'Debian' or grains['os_family'] == 'RedHat' %}
