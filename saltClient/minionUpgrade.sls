@@ -3,7 +3,7 @@ minionUpgrade:
   pkg.install:
     - name: salt-minion
 
-{%- elif grains['os_family'] == 'Debian' OR grains['os_family'] == 'RedHat' %}
+{%- elif grains['os_family'] == 'Debian' or grains['os_family'] == 'RedHat' %}
 minionUpgrade:
   cmd.run:
     - name: |
